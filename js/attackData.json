@@ -1,0 +1,1031 @@
+var respondersData = [
+  {
+    "time": "8:20",
+    "responders":[{
+      "address": "100-104 Duane St. Manhattan",
+      "geolocation": [40.71531, -74.00623],
+      "totalvictims": 2, 
+      "teams": [
+        {"name": "Battalion 1","site":"North tower", "victims": [
+          {"name": "Matthew Lancelot Ryan", "age": 54, "rank": "Chief", "picture": "img/victims/battalions/battalion1/matthew_lancelot_ryan.jpg"},
+          {"name": "Paul Thomas Mitchell", "age": 46, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion1/paul_thomas_mitchell.jpg"}
+        ]}
+      ]
+    },
+    {
+      "address": "227-29 6th Avenue Manhattan",
+      "geolocation": [40.71981, -74.00522],
+      "totalvictims": 11,
+      "teams": [
+        {"name": "Battalion 2", "site":"North tower", "victims": [
+          {"name": "William McGovern", "age": 49, "rank": "Chief", "picture": "img/victims/battalions/battalion2/william_mcgovern.jpg"},
+          {"name": "Richard Prunty", "age": 57, "rank": "Chief" , "picture": "img/victims/battalions/battalion2/richard_prunty.jpg"},
+          {"name": "Faustino Apostol", "age": 55, "rank": "Firefighter", "picture": "img/victims/battalions/battalion2/faustino_apostel_jr.jpg"}
+        ]},
+        {"name": "Ladder 5", "site":"North tower", "victims": [
+          {"name": "Vincent Francis Giammona", "age": 40, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder5/vincent_francis_giammona.jpg"},
+          {"name": "Michael Warchola", "age": 51, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder5/michael_warchola.jpg"},
+          {"name": "Louis Arena", "age": 32, "rank": "Firefighter", "picture": "img/victims/ladders/ladder5/louis_arena.jpg"},
+          {"name": "Andrew Brunn", "age": 28, "rank": "Firefighter", "picture": "img/victims/ladders/ladder5/andrew_brunn.jpg"},
+          {"name": "Thomas Hannafin", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder5/thomas_hannafin.jpg"},
+          {"name": "Paul Hanlon Keating", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder5/paul_hanlon_keating.jpg"},
+          {"name": "John A. Santore", "age": 49, "rank": "Firefighter", "picture": "img/victims/ladders/ladder5/john_a_santore.jpg"},
+          {"name": "Gregory Thomas Saucedo", "age": 31, "rank": "Firefighter", "picture": "img/victims/ladders/ladder5/gregory_thomas_saucedo.jpg"}
+        ]}
+      ]
+    },
+    {
+      "address": "150 West 19th Street Manhattan",
+      "geolocation": [40.74135, -73.99678],
+      "totalvictims": 5,
+        "teams": [
+          {"name": "Battalion 7", "site":"South tower", "victims": [
+            {"name": "Orio Palmer", "age": 45, "rank": "Chief", "picture": "img/victims/battalions/battalion7/orio_palmer.jpg"},
+            {"name": "Stephen G. Harrell", "age": 44, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion7/stephen_g_harrell.jpg"},
+            {"name": "Philip Scott Petti", "age": 45, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion7/philip_scott_petti.jpg"}
+          ]},
+          {"name": "Ladder 12", "site":"South tower", "victims": [
+            {"name": "Angel L. Juarbe Jr", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder12/angel_l_juarbe_jr.jpg"},
+            {"name": "Michael D. Mullan", "age": 34, "rank": "Firefighter", "picture": "img/victims/ladders/ladder12/michael_mullan.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "167 East 51st Street Manhattan",
+      "geolocation": [40.75682, -73.97117],
+      "totalvictims": 10,
+        "teams": [
+          {"name": "Battalion 8", "site":"South tower", "victims": [
+            {"name": "Thomas Patrick DeAngelis", "age": 51, "rank": "Chief", "picture": "img/victims/battalions/battalion8/thomas_patrick_deangelis.jpg"},
+            {"name": "Thomas McCann", "age": 45, "rank": "Firefighter", "picture": "img/victims/battalions/battalion8/thomas_mccann.jpg"}
+          ]},
+          {"name": "Ladder 2", "site":"South tower","victims": [
+            {"name": "Frederick Ill Jr", "age": 49, "rank": "Captain", "picture": "img/victims/ladders/ladder2/frederick_ill_jr.jpg"},
+            {"name": "Michael J. Clarke", "age": 27, "rank": "Firefighter", "picture": "img/victims/ladders/ladder2/michael_j_clarke.jpg"},
+            {"name": "George DiPasquale", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder2/george_dipasquale.jpg"},
+            {"name": "Denis P. Germain", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder2/denis_p_germain.jpg"},
+            {"name": "Daniel Edward Harlin", "age": 41, "rank": "Firefighter", "picture": "img/victims/ladders/ladder2/daniel_edward_harlin.jpg"},
+            {"name": "Carl Molinaro", "age": 32, "rank": "Firefighter", "picture": "img/victims/ladders/ladder2/carl_molinaro.jpg"},
+            {"name": "Dennis Michael Mulligan", "age": 32, "rank": "Firefighter", "picture": "img/victims/ladders/ladder2/dennis_michael_mulligan.jpg"}
+          ]},
+          {"name": "Engine 8", "site":"South tower", "victims": [
+            {"name": "Robert Parro", "age": 35, "rank": "Firefighter", "picture": "img/victims/engines/engine8/robert_parro.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "782 8th Avenue Manhattan",
+      "geolocation": [40.76076, -73.98680],
+      "totalvictims": 17,
+        "teams": [
+          {"name": "Battalion 9", "site":"South tower", "victims": [
+            {"name": "Dennis Lawrence Devlin", "age": 51, "rank": "Chief", "picture": "img/victims/battalions/battalion9/dennis_lawrence_devlin.jpg"},
+            {"name": "Edward F. Geraghty", "age": 45, "rank": "Chief", "picture": "img/victims/battalions/battalion9/edward_f_geraghty.jpg"},
+            {"name": "Charles William Garbarini", "age": 44, "rank": "Chief", "picture": "img/victims/battalions/battalion9/charles_william_garbarini.jpg"},
+            {"name": "Carl Asaro", "age": 39, "rank": "Firefighter", "picture": "img/victims/battalions/battalion9/carl_asaro.jpg"},
+            {"name": "Alan D. Feinberg", "age": 48, "rank": "Firefighter", "picture": "img/victims/battalions/battalion9/alan_d_feinberg.jpg"}
+          ]},
+          {"name": "Engine 54", "site":"South tower", "victims": [
+            {"name": "Paul John Gill", "age": 34, "rank": "Firefighter", "picture": "img/victims/engines/engine54/paul_john_gill.jpg"},
+            {"name": "Jose Guadalupe", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine54/jose_guadalupe.jpg"},
+            {"name": "Christopher Santora", "age": 23, "rank": "Firefighter", "picture": "img/victims/engines/engine54/christopher_santora.jpg"}
+          ]},
+          {"name": "Ladder 4", "site":"South tower", "victims": [
+            {"name": "David Terence Wooley", "age": 54, "rank": "Captain", "picture": "img/victims/ladders/ladder4/david_terence_wooley.jpg"},
+            {"name": "Daniel O'Callaghan", "age": 42, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder4/daniel_ocallaghan.jpg"},
+            {"name": "Joseph Angelini, Jr", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/joseph_angelini_jr.jpg"},
+            {"name": "Peter Brennan", "age": 30, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/peter_brennan.jpg"},
+            {"name": "Michael E. Brennan", "age": 27, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/michael_e_brennan.jpg"},
+            {"name": "Michael Haub", "age": 43, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/michael_haub.jpg"},
+            {"name": "Michael F. Lynch", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/michael_f_lynch.jpg"},
+            {"name": "Samuel Oitice", "age": 45, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/samuel_oitice.jpg"},
+            {"name": "John James Tipping II", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder4/john_james_tipping_II.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "145-51 West 100th Street Manhattan",
+      "geolocation": [40.79480, -73.96424],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 11", "site":"North tower", "victims": [
+            {"name": "John M. Paolillo", "age": 51, "rank": "Chief", "picture": "img/victims/battalions/battalion11/john_m_paolillo.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "2282 3rd Avenue Manhattan",
+      "geolocation": [40.80329, -73.93651],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 12", "site":"South tower","victims": [
+            {"name": "Frederick Claude Scheffold", "age": 57, "rank": "Chief", "picture": "img/victims/battalions/battalion12/frederick_claude_scheffold.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "1189 Castleton Ave Staten Island",
+      "geolocation": [40.63437, -74.12202],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 22", "site":"North tower", "victims": [
+            {"name": "Charles Joseph Margiotta", "age": 44, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion22/charles_joseph_margiotta.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "2937 W 8th St Brooklyn",
+      "geolocation": [40.57677, -73.97640],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 43", "site":"South tower", "victims": [
+            {"name": "Geoffrey E. Guja", "age": 49, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion43/geoffrey_e_guja.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "48-06 Rockaway Beach Boulevard Queens",
+      "geolocation": [40.59340, -73.77888],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 47", "site":"South tower","victims": [
+            {"name": "Anthony Jovic", "age": 39, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion47/anthony_jovic.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "1307 Prospect Ave Brooklyn",
+      "geolocation": [40.65122, -73.97578],
+      "totalvictims": 2,
+        "teams": [
+          {"name": "Battalion 48", "site":"North tower", "victims": [
+            {"name": "Joseph Grzelak", "age": 52, "rank": "Chief", "picture": "img/victims/battalions/battalion48/joseph_grzelak.jpg"},
+            {"name": "Michael Leopoldo Bocchino", "age": 45, "rank": "Firefighter", "picture": "img/victims/battalions/battalion48/micheal_leopoldo_bocchino.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "42-06 Astoria Boulevard Queens",
+      "geolocation": [40.76850, -73.90879],
+      "totalvictims": 2,
+        "teams": [
+          {"name": "Battalion 49", "site":"South tower", "victims": [
+            {"name": "John Moran", "age": 42, "rank": "Chief", "picture": "img/victims/battalions/battalion49/john_moran.jpg"},
+            {"name": "Carlos R. Lillo", "age": 37, "rank": "Paramedic", "picture": "img/victims/battalions/battalion49/carlos_r_lillo.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "153-11 Hillside Ave Queens",
+      "geolocation": [40.70764, -73.80418],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 50", "site":"North tower", "victims": [
+            {"name": "Lawrence T. Stack", "age": 58, "rank": "Chief", "picture": "img/victims/battalions/battalion50/lawrence_t_stack.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "206 Monroe Street Brooklyn",
+      "geolocation": [42.10559, -84.24663],
+      "totalvictims": 8,
+        "teams": [
+          {"name": "Battalion 57", "site":"South tower", "victims": [
+            {"name": "Dennis Cross", "age": 60, "rank": "Chief", "picture": "img/victims/battalions/battalion57/dennis_cross.jpg"},
+            {"name": "Joseph Ross Marchbanks, Jr", "age": 47, "rank": "Chief", "picture": "img/victims/battalions/battalion57/joseph_ross_marchbanks_jr.jpg"},
+            {"name": "Ricardo J. Quinn", "age": 40, "rank": "Paramedic", "picture": "img/victims/battalions/battalion57/ricardo_j_quinn.jpg"}
+          ]},
+          {"name": "Engine 235", "site":"South tower", "victims": [
+            {"name": "Steven Bates", "age": 42, "rank": "Lieutenant", "picture": "img/victims/engines/engine235/steven_bates.jpg"},
+            {"name": "Nicholas Paul Chiofalo", "age": 39, "rank": "Firefighter", "picture": "img/victims/engines/engine235/nicholas_paul_chiofalo.jpg"},
+            {"name": "Francis Esposito", "age": 32, "rank": "Firefighter", "picture": "img/victims/engines/engine235/francis_esposito.jpg"},
+            {"name": "Lee S. Fehling", "age": 28, "rank": "Firefighter", "picture": "img/victims/engines/engine235/lee_s_fehling.jpg"},
+            {"name": "Lawrence G. Veling", "age": 44, "rank": "Firefighter", "picture": "img/victims/engines/engine235/lawrence_g_veling.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "172 Tillary Street Brooklyn",
+      "geolocation": [40.69546, -73.98283],
+      "totalvictims": 4,
+        "teams": [
+          {"name": "Division 11", "site":"South tower", "victims": [
+            {"name": "Timothy M. Stackpole", "age": 58, "rank": "Captain", "picture": "img/victims/divisions/division11/timothy_m_stackpole.jpg"}
+          ]},
+          {"name": "Engine 207", "site":"North tower", "victims": [
+            {"name": "Karl Henry Joseph", "age": 25, "rank": "Firefighter", "picture": "img/victims/engines/engine207/karl_henry_joseph.jpg"},
+            {"name": "Shawn Edward Powell", "age": 32, "rank": "Firefighter", "picture": "img/victims/engines/engine207/shawn_edward_powell.jpg"},
+            {"name": "Kevin O. Reilly", "age": 28, "rank": "Firefighter", "picture": "img/victims/engines/engine207/kevin_o_reilly.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "885 Howard Avenue Brooklyn",
+      "geolocation": [40.66118, -73.91828],
+      "totalvictims": 3,
+        "teams": [
+          {"name": "Division 15", "site":"North tower", "victims": [
+            {"name": "Thomas Theodore Haskell Jr", "age": 37, "rank": "Chief", "picture": "img/victims/divisions/division15/thomas_theodore_haskell_jr.jpg"},
+            {"name": "Martin J. Egan Jr", "age": 36, "rank": "Captain", "picture": "img/victims/divisions/division15/martin_j_egan_jr.jpg"},
+            {"name": "William O'Keefe", "age": 48, "rank": "Captain", "picture": "img/victims/divisions/division15/william_okeefe.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "42 South Street Manhattan",
+      "geolocation": [40.70365, -74.00766],
+      "totalvictims": 12,
+        "teams": [
+          {"name": "Engine 4", "site":"North tower", "victims": [
+            {"name": "Calixto Anaya Jr", "age": 35, "rank": "Firefighter", "picture": "img/victims/engines/engine4/calixto_anaya.jpg"},
+            {"name": "James C. Riches", "age": 29, "rank": "Firefighter", "picture": "img/victims/engines/engine4/james_c_riches.jpg"},
+            {"name": "Thomas G. Schoales", "age": 27, "rank": "Firefighter", "picture": "img/victims/engines/engine4/thomas_g_schoales.jpg"},
+            {"name": "Paul A. Tegtmeier", "age": 41, "rank": "Firefighter", "picture": "img/victims/engines/engine4/paul_a_tegtmeier.jpg"}
+          ]},
+          {"name": "Ladder 15", "site":"South tower", "victims": [
+            {"name": "Joseph Gerard Leavey", "age": 45, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder15/joseph_gerard_leavey.jpg"},
+            {"name": "Richard Lanard Allen", "age": 30, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/richard_lanard_allen.jpg"},
+            {"name": "Arthur Thaddeus Barry", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/arthur_thaddeus_barry.jpg"},
+            {"name": "Thomas W. Kelly", "age": 50, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/thomas_w_kelly.jpg"},
+            {"name": "Scott Kopytko", "age": 32, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/scott_kopytko.jpg"},
+            {"name": "Scott Larsen", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/scott_larsen.jpg"},
+            {"name": "Douglas E. Oelschlager", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/douglas_e_oelschlager.jpg"},
+            {"name": "Eric T. Olsen", "age": 41, "rank": "Firefighter", "picture": "img/victims/ladders/ladder15/eric_t_olsen.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "340 East 14th Street Manhattan",
+      "geolocation": [40.73140, -73.98347],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 5", "site":"North tower", "victims": [
+            {"name": "Manuel Del Valle Jr", "age": 32, "rank": "Firefighter", "picture": "img/victims/engines/engine5/manuel_delvalle_jr.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "49 Beekman Street Manhattan",
+      "geolocation": [40.70998, -74.00541],
+      "totalvictims": 3,
+        "teams": [
+          {"name": "Engine 6", "site":"North tower", "victims": [
+            {"name": "Paul Beyer", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine6/paul_beyer.jpg"},
+            {"name": "Thomas Holohan", "age": 36, "rank": "Firefighter", "picture": "img/victims/engines/engine6/thomas_holohan.jpg"},
+            {"name": "William R. Johnston", "age": 31, "rank": "Firefighter", "picture": "img/victims/engines/engine6/william_r_johnston.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "124 Liberty Street Manhattan",
+      "geolocation": [40.70985, -74.01238],
+      "totalvictims": 3,
+        "teams": [
+          {"name": "Engine 10", "site":"North tower","victims": [
+            {"name": "Gregg Arthur Atlas", "age": 44, "rank": "Lieutenant", "picture": "img/victims/engines/engine10/gregg_arthur_atlas.jpg"},
+            {"name": "Jeffrey James Olsen", "age": 31, "rank": "Firefighter", "picture": "img/victims/engines/engine10/jeffrey_james_olsen.jpg"}
+          ]},
+          {"name": "Ladder 10", "site":"North tower", "victims": [
+            {"name": "Sean Patrick Tallon", "age": 26, "rank": "Firefighter", "picture": "img/victims/ladders/ladder10/sean_patrick_tallon.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "238 East 40th Street Manhattan",
+      "geolocation": [40.74865, -73.97402],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 21", "site":"North tower", "victims": [
+            {"name": "William Francis Burke Jr", "age": 46, "rank": "Captain", "picture": "img/victims/engines/engine21/william_francis_burke_jr.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "215 West 58th Street Manhattan",
+      "geolocation": [40.76678, -73.98031],
+      "totalvictims": 4,
+        "teams": [
+          {"name": "Engine 23", "site":"South tower","victims": [
+            {"name": "Robert McPadden", "age": 30, "rank": "Firefighter", "picture": "img/victims/engines/engine23/robert_mcpadden.jpg"},
+            {"name": "James Nicholas Pappageorge", "age": 29, "rank": "Firefighter", "picture": "img/victims/engines/engine23/james_nicholas_pappageorge.jpg"},
+            {"name": "Hector Luis Tirado, Jr", "age": 30, "rank": "Firefighter", "picture": "img/victims/engines/engine23/hector_luis_tirado_jr.jpg"},
+            {"name": "Mark P. Whitford", "age": 31, "rank": "Firefighter", "picture": "img/victims/engines/engine23/mark_p_whitford.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "220 West 37th Street Manhattan",
+      "geolocation": [40.75312, -73.99036],
+      "totalvictims": 2,
+        "teams": [
+          {"name": "Engine 26", "site":"North tower", "victims": [
+            {"name": "Thomas Farino", "age": 37, "rank": "Captain", "picture": "img/victims/engines/engine26/thomas_farino.jpg"},
+            {"name": "Dana R Hannon", "age": 29, "rank": "Firefighter", "picture": "img/victims/engines/engine26/dana_r_hannon.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "42 Great Jones Street Manhattan",
+      "geolocation": [40.72700, -73.99251],
+      "totalvictims": 8,
+        "teams": [
+          {"name": "Engine 33", "site":"North tower","victims": [
+            {"name": "Kevin Pfeifer", "age": 42, "rank": "Lieutenant", "picture": "img/victims/engines/engine33/kevin_pfeifer.jpg"},
+            {"name": "David Arce", "age": 36, "rank": "Firefighter", "picture": "img/victims/engines/engine33/david_arce.jpg"},
+            {"name": "Michael Boyle", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine33/michael_boyle.jpg"},
+            {"name": "Robert Evans", "age": 36, "rank": "Firefighter", "picture": "img/victims/engines/engine33/robert_evans.jpg"},
+            {"name": "Keithroy Marcellus Maynard", "age": 30, "rank": "Firefighter", "picture": "img/victims/engines/engine33/keithroy_marcellus_maynard.jpg"}
+          ]},
+          {"name": "Ladder 9", "site":"North tower", "victims": [
+            {"name": "Gerard Baptiste", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder9/gerard_baptiste.jpg"},
+            {"name": "John P. Tierney", "age": 27, "rank": "Firefighter", "picture": "img/victims/ladders/ladder9/john_p_tierney.jpg"},
+            {"name": "Jeffrey P. Walz", "age": 37, "rank": "Firefighter", "picture": "img/victims/ladders/ladder9/jeffrey_p_walz.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "415 West 125th Street Manhattan",
+      "geolocation": [40.81195, -73.95459],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 37", "site":"North tower", "victims": [
+            {"name": "John Giordano", "age": 47, "rank": "Firefighter", "picture": "img/victims/engines/engine37/john_giordano.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "131 Amsterdam Avenue Manhattan",
+      "geolocation": [40.76939, -73.98380],
+      "totalvictims": 10,
+        "teams": [
+          {"name": "Engine 40", "site":"South tower", "victims": [
+            {"name": "John F. Ginley", "age": 37, "rank": "Lieutenant", "picture": "img/victims/engines/engine40/john_f_ginley.jpg"},
+            {"name": "Kevin Bracken", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine40/kevin_bracken.jpg"},
+            {"name": "Michael D. D'Auria", "age": 25, "rank": "Firefighter", "picture": "img/victims/engines/engine40/michael_dauria.jpg"},
+            {"name": "Bruce Gary", "age": 51, "rank": "Firefighter", "picture": "img/victims/engines/engine40/bruce_gary.jpg"},
+            {"name": "Steven Mercado", "age": 38, "rank": "Firefighter", "picture": "img/victims/engines/engine40/steven_mercado.jpg"}
+          ]},
+          {"name": "Ladder 35", "site":"South tower", "victims": [
+            {"name": "Frank Callahan", "age": 51, "rank": "Captain", "picture": "img/victims/ladders/ladder35/frank_callahan.jpg"},
+            {"name": "James Andrew Giberson", "age": 43, "rank": "Firefighter", "picture": "img/victims/ladders/ladder35/james_andrew_giberson.jpg"},
+            {"name": "Vincent S. Morello", "age": 34, "rank": "Firefighter", "picture": "img/victims/ladders/ladder35/vincent_s_morello.jpg"},
+            {"name": "Michael Otten", "age": 42, "rank": "Firefighter", "picture": "img/victims/ladders/ladder35/michael_otten.jpg"},
+            {"name": "Michael Roberts", "age": 30, "rank": "Firefighter", "picture": "img/victims/ladders/ladder35/michael_roberts.jpg"}
+          ]},
+        ]
+    },
+    {
+      "address": "1155 Washington Avenue Bronx",
+      "geolocation": [40.82912, -73.90812],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 50", "site":"South tower", "victims": [
+            {"name": "Robert W. Spear Jr", "age": 30, "rank": "Firefighter", "picture": "img/victims/engines/engine50/robert_w_spear_jr.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "363 Broome Street Manhattan",
+      "geolocation": [40.71981, -73.99577],
+      "totalvictims": 4,
+        "teams": [
+          {"name": "Engine 55", "site":"North tower", "victims": [
+            {"name": "Peter L. Freund", "age": 45, "rank": "Lieutenant", "picture": "img/victims/engines/engine55/peter_l_freund.jpg"},
+            {"name": "Robert Lane", "age": 28, "rank": "Firefighter", "picture": "img/victims/engines/engine55/robert_lane.jpg"},
+            {"name": "Christopher Mozzillo", "age": 27, "rank": "Firefighter", "picture": "img/victims/engines/engine55/christopher_mozzillo.jpg"},
+            {"name": "Stephen P. Russell", "age": 40, "rank": "Firefighter", "picture": "img/victims/engines/engine55/stephen_p_russell.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "1367 5th Avenue Manhattan",
+      "geolocation": [40.79891  , -73.94732],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 58", "site":"South tower", "victims": [
+            {"name": "Robert B. Nagel", "age": 55, "rank": "Lieutenant", "picture": "img/victims/engines/engine58/robert_b_nagel.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "120 West 83rd Street Manhattan",
+      "geolocation": [40.78474, -73.97466],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 74", "site":"South tower","victims": [
+            {"name": "Ruben D. Correa", "age": 44, "rank": "Firefighter", "picture": "img/victims/engines/engine74/ruben_d_correa.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "5113-5117 4th Avenue Brooklyn",
+      "geolocation": [40.64538, -74.01327],
+      "totalvictims": 4,
+        "teams": [
+          {"name": "Engine 201", "site":"South tower", "victims": [
+            {"name": "Paul Richard Martini", "age": 37, "rank": "Lieutenant", "picture": "img/victims/engines/engine201/paul_richard_marini.jpg"},
+            {"name": "Gregory Joseph Buck", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine201/gregory_joseph_buck.jpg"},
+            {"name": "Christopher Pickford", "age": 32, "rank": "Firefighter", "picture": "img/victims/engines/engine201/christopher_pickford.jpg"},
+            {"name": "John Albert Schardt", "age": 34, "rank": "Firefighter", "picture": "img/victims/engines/engine201/john_albert_schardt.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "126 Foster Avenue Brooklyn",
+      "geolocation": [40.62790, -73.97572],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 250", "site":"South tower", "victims": [
+            {"name": "Michael Ragusa", "age": 29, "rank": "Firefighter", "picture": "img/victims/engines/engine250/michael_ragusa.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "74 Middagh Street Brooklyn",
+      "geolocation": [40.69999, -73.99225],
+      "totalvictims": 7,
+        "teams": [
+          {"name": "Engine 205", "site":"South tower", "victims": [
+            {"name": "Robert Francis Wallace", "age": 43, "rank": "Lieutenant", "picture": "img/victims/engines/engine205/robert_francis_wallace.jpg"}
+          ]},
+          {"name": "Ladder 118", "site":"South tower", "victims": [
+            {"name": "Robert M. Regan", "age": 48, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder118/robert_m_regan.jpg"},
+            {"name": "Joseph Agnello", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder118/joseph_agnello.jpg"},
+            {"name": "Vernon Paul Cherry", "age": 49, "rank": "Firefighter", "picture": "img/victims/ladders/ladder118/vernon_paul_cherry.jpg"},
+            {"name": "Scott Matthew Davidson", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder118/scott_matthew_davidson.jpg"},
+            {"name": "Leon Smith Jr", "age": 48, "rank": "Firefighter", "picture": "img/victims/ladders/ladder118/leon_smith_jr.jpg"},
+            {"name": "Peter Anthony Vega", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder118/peter_anthony_vega.jpg"}
+          ]},
+        ]
+    },
+    {
+      "address": "495 Hancock Street Brooklyn",
+      "geolocation": [40.68439, -73.93573],
+      "totalvictims": 5,
+        "teams": [
+          {"name": "Engine 214", "site":"South tower", "victims": [
+            {"name": "Carl John Bedigian", "age": 35, "rank": "Lieutenant", "picture": "img/victims/engines/engine214/carl_john_bedigian.jpg"},
+            {"name": "John Joseph Florio", "age": 33, "rank": "Firefighter", "picture": "img/victims/engines/engine214/john_joseph_florio.jpg"},
+            {"name": "Michael Edward Roberts", "age": 31, "rank": "Firefighter", "picture": "img/victims/engines/engine214/michael_edward_roberts.jpg"},
+            {"name": "Kenneth Thomas Watson", "age": 39, "rank": "Firefighter", "picture": "img/victims/engines/engine214/kenneth_thomas_watson.jpg"}
+          ]},
+          {"name": "Ladder 111", "site":"North tower", "victims": [
+            {"name": "Christopher P. Sullivan", "age": 39, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder111/christopher_p_sullivan.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "187 Union Avenue Brooklyn",
+      "geolocation": [40.70600, -73.95047],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 216", "site":"South tower", "victims": [
+            {"name": "Daniel Suh", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine216/daniel_suhr.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "940 Dekalb Avenue Brooklyn",
+      "geolocation": [40.69266, -73.93797],
+      "totalvictims": 4,
+        "teams": [
+          {"name": "Engine 217", "site":"South tower", "victims": [
+            {"name": "Kenneth Phelan", "age": 41, "rank": "Lieutenant", "picture": "img/victims/engines/engine217/kenneth_phelan.jpg"},
+            {"name": "Steven Coakley", "age": 36, "rank": "Firefighter", "picture": "img/victims/engines/engine217/steven_coakley.jpg"},
+            {"name": "Philip T. Hayes", "age": 67, "rank": "Firefighter", "picture": "img/victims/engines/engine217/philip_t_hayes.jpg"},
+            {"name": "Neil Joseph Leavy", "age": 34, "rank": "Firefighter", "picture": "img/victims/engines/engine217/neil_joseph_leavy.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "409 State Street Brooklyn",
+      "geolocation": [40.68712, -73.98271],
+      "totalvictims": 3,
+        "teams": [
+          {"name": "Engine 226", "site":"South tower", "victims": [
+            {"name": "Brian McAleese", "age": 39, "rank": "Firefighter", "picture": "img/victims/engines/engine226/brian_mcaleese.jpg"},
+            {"name": "David Paul De Rubbio", "age": 39, "rank": "Firefighter", "picture": "img/victims/engines/engine226/david_paul_derubbio.jpg"},
+            {"name": "Stanley S. Smagala Jr", "age": 39, "rank": "Firefighter", "picture": "img/victims/engines/engine226/stanley_s_smagala_jr.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "701 Park Avenue Brooklyn",
+      "geolocation": [40.69805, -73.94754],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Engine 230", "site":"South tower", "victims": [
+            {"name": "Brian G. Ahearn", "age": 43, "rank": "Lieutenant", "picture": "img/victims/engines/engine230/brian_g_ahearn.jpg"},
+            {"name": "Frank Bonomo", "age": 42, "rank": "Firefighter", "picture": "img/victims/engines/engine230/frank_bonomo.jpg"},
+            {"name": "Michael Scott Carlo", "age": 34, "rank": "Firefighter", "picture": "img/victims/engines/engine230/michael_scott_carlo.jpg"},
+            {"name": "Jeffrey Stark", "age": 30, "rank": "Firefighter", "picture": "img/victims/engines/engine230/jeffrey_stark.jpg"},
+            {"name": "Eugene Whelan", "age": 31, "rank": "Firefighter", "picture": "img/victims/engines/engine230/eugene_whelan.jpg"},
+            {"name": "Edward James White III", "age": 30, "rank": "Firefighter", "picture": "img/victims/engines/engine230/edward_james_white_III.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "205 Greenpoint Avenue Brooklyn",
+      "geolocation": [40.73072, -73.95113],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 238", "site":"South tower", "victims": [
+            {"name": "Glenn E. Wilkenson", "age": 46, "rank": "Lieutenant", "picture": "img/victims/engines/engine238/glenn_e_wilkenson.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "252 Lorraine Street Brooklyn",
+      "geolocation": [40.67214, -73.99963],
+      "totalvictims": 3,
+        "teams": [
+          {"name": "Engine 279", "site":"South tower", "victims": [
+            {"name": "Ronnie Lee Henderson", "age": 52, "rank": "Firefighter", "picture": "img/victims/engines/engine279/ronnie_lee_henderson.jpg"},
+            {"name": "Anthony Rodriguez", "age": 36, "rank": "Firefighter", "picture": "img/victims/engines/engine279/anthony_rodriguez.jpg"}
+          ]},
+          {"name": "Ladder 131", "site":"South tower", "victims": [
+            {"name": "Christian Michael Otto Regenhard", "age": 28, "rank": "Firefighter", "picture": "img/victims/ladders/ladder131/christian_michael_otto_regenhard.jpg"}
+          ]}
+        ]
+    }
+    ]},{
+    "time": "8:46",
+    "responders":[
+    {
+      "address": "25 Pitt Street Manhattan",
+      "geolocation": [40.71627, -73.98355],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Battalion 4", "site":"North tower", "victims": [
+            {"name": "Thomas O'Hagan", "age": 54, "rank": "Lieutenant", "picture": "img/victims/battalions/battalion4/thomas_ohagan.jpg"}
+          ]}
+        ]
+    },
+     {
+      "address": "103-17 98th Street Queens",
+      "geolocation": [40.68250, -73.84210],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 285", "site":"South tower", "victims": [
+            {"name": "Raymond R. York", "age": 45, "rank": "Firefighter", "picture": "img/victims/engines/engine285/raymond_r_york.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "36-18 Francis Lewis Boulevard Queens",
+      "geolocation": [40.76332, -73.78697],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Engine 320", "site":"North tower","victims": [
+            {"name": "James J. Corrigan", "age": 60, "rank": "Captain", "picture": "img/victims/engines/engine320/james_j_corrigan.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "56-29 68th Street Queens",
+      "geolocation": [40.72607, -73.89624],
+      "totalvictims": 13,
+        "teams": [
+          {"name": "Haz-Mat 1", "site":"South tower", "victims": [
+            {"name": "John A. Crisci", "age": 48, "rank": "Lieutenant", "picture": "img/victims/haz-mats/haz-mat1/john_a_crisci.jpg"},
+            {"name": "Dennis M. Carey", "age": 51, "rank": "Firefighter", "picture": "img/victims/haz-mats/haz-mat1/dennis_m_carey.jpg"},
+            {"name": "Martin N. DeMeo", "age": 47, "rank": "Firefighter", "picture": "img/victims/haz-mats/haz-mat1/martin_n_demeo.jpg"},
+            {"name": "Thomas Gardner", "age": 39, "rank": "Firefighter", "picture": "img/victims/haz-mats/haz-mat1/thomas_gardner.jpg"},
+            {"name": "Jonathan R. Hohmann", "age": 48, "rank": "Firefighter", "picture": "img/victims/haz-mats/haz-mat1/jonathan_r_hohmann.jpg"},
+            {"name": "Dennis Scauso", "age": 46, "rank": "Firefighter", "picture": "img/victims/haz-mats/haz-mat1/dennis_scauso.jpg"},
+            {"name": "Kevin Joseph Smith", "age": 47, "rank": "Firefighter", "picture": "img/victims/haz-mats/haz-mat1/kevin_joseph_smith.jpg"}
+          ]},
+          {"name": "Squad 288", "site":"South tower", "victims": [
+            {"name": "Ronald T. Kerwin", "age": 42, "rank": "Lieutenant", "picture": "img/victims/squads/squad288/ronald_t_kerwin.jpg"},
+            {"name": "Ronnie E. Gies", "age": 43, "rank": "Firefighter", "picture": "img/victims/squads/squad288/ronnie_e_gies.jpg"},
+            {"name": "Joseph Hunter", "age": 31, "rank": "Firefighter", "picture": "img/victims/squads/squad288/joseph_hunter.jpg"},
+            {"name": "Jonathan Lee Ielpi", "age": 29, "rank": "Firefighter", "picture": "img/victims/squads/squad288/jonathan_lee_ielpi.jpg"},
+            {"name": "Adam David Rand", "age": 30, "rank": "Firefighter", "picture": "img/victims/squads/squad288/adam_david_rand.jpg"},
+            {"name": "Timothy Matthew Welty", "age": 34, "rank": "Firefighter", "picture": "img/victims/squads/squad288/timothy_matthew_welty.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "108 East 13th Street Manhattan",
+      "geolocation": [40.73323, -73.98925],
+      "totalvictims": 12,
+        "teams": [
+          {"name": "Ladder 3", "site":"North tower", "victims": [
+            {"name": "Patrick J. Brown", "age": 48, "rank": "Captain", "picture": "img/victims/ladders/ladder3/patrick_j_brown.jpg"},
+            {"name": "Kevin W. Donnelly", "age": 43, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder3/kevin_w_donnelly.jpg"},
+            {"name": "Michael Carroll", "age": 39, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/michael_carroll.jpg"},
+            {"name": "James Raymond Coyle", "age": 26, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/james_raymond_coyle.jpg"},
+            {"name": "Gerard Dewan", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/gerard_dewan.jpg"},
+            {"name": "Jeffrey John Giordano", "age": 45, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/jeffrey_john_giordano.jpg"},
+            {"name": "Joseph Maloney", "age": 45, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/joseph_maloney.jpg"},
+            {"name": "John Kevin McAvoy", "age": 47, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/john_kevin_mcavoy.jpg"},
+            {"name": "Timothy Patrick McSweeney", "age": 37, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/timothy_patrick_mcsweeney.jpg"},
+            {"name": "Joseph J. Ogren", "age": 30, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/joseph_j_ogren.jpg"},
+            {"name": "Steven John Olson", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder3/steven_john_olson.jpg"}
+          ]},
+          {"name": "Battalion 6", "site":"South tower","victims": [
+            {"name": "John P. Williamson", "age": 46, "rank": "Chief", "picture": "img/victims/battalions/battalion6/john_p_williamson.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "234 East 29th Street Manhattan",
+      "geolocation": [40.74187, -73.97877],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Ladder 7", "site":"South tower", "victims": [
+            {"name": "Vernon Allan Richard", "age": 53, "rank": "Captain", "picture": "img/victims/ladders/ladder7/vernon_allan_richard.jpg"},
+            {"name": "George Cain", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder7/george_cain.jpg"},
+            {"name": "Robert Joseph Foti", "age": 42, "rank": "Firefighter", "picture": "img/victims/ladders/ladder7/robert_joseph_foti.jpg"},
+            {"name": "Richard Muldowney Jr", "age": 40, "rank": "Firefighter", "picture": "img/victims/ladders/ladder7/richard_muldowney_jr.jpg"},
+            {"name": "Charles Mendez", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder7/charles_mendez.jpg"},
+            {"name": "Vincent Princiotta", "age": 39, "rank": "Firefighter", "picture": "img/victims/ladders/ladder7/vincent_princiotta.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "14 North Moore Street Manhattan",
+      "geolocation": [40.71970, -74.00666],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Ladder 8", "site":"North tower", "victims": [
+            {"name": "Vincent Gerard Halloran", "age": 43, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder8/vincent_gerard_halloran.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "222 East 2nd Street Manhattan",
+      "geolocation": [40.72187, -73.98252],
+      "totalvictims": 7,
+        "teams": [
+          {"name": "Ladder 11", "site":"South tower", "victims": [
+            {"name": "Michael Quilty", "age": 42, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder11/michael_quilty.jpg"},
+            {"name": "Michael F. Cammarata", "age": 22, "rank": "Firefighter", "picture": "img/victims/ladders/ladder11/michael_f_cammarata.jpg"},
+            {"name": "Edward James Day", "age": 45, "rank": "Firefighter", "picture": "img/victims/ladders/ladder11/edward_james_day.jpg"},
+            {"name": "John F. Heffernan", "age": 37, "rank": "Firefighter", "picture": "img/victims/ladders/ladder11/john_f_heffernan.jpg"},
+            {"name": "Richard John Kelly Jr", "age": 50, "rank": "Firefighter", "picture": "img/victims/ladders/ladder11/richard_john_kelly_jr.jpg"},
+            {"name": "Robert King Jr", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder11/robert_king_jr.jpg"},
+            {"name": "Matthew Rogan", "age": 37, "rank": "Firefighter", "picture": "img/victims/ladders/ladder11/matthew_rogan.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "159 East 85th Street Manhattan",
+      "geolocation": [40.77871, -73.95522],
+      "totalvictims": 9,
+        "teams": [
+          {"name": "Ladder 13", "site":"South tower", "victims": [
+            {"name": "Walter G. Hynes", "age": 46, "rank": "Captain", "picture": "img/victims/ladders/ladder13/walter_g_hynes.jpg"},
+            {"name": "Thomas Hetzel", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder13/thomas_hetzel.jpg"},
+            {"name": "Dennis McHugh", "age": 34, "rank": "Firefighter", "picture": "img/victims/ladders/ladder13/dennis_mchugh.jpg"},
+            {"name": "Thomas E. Sabella", "age": 44, "rank": "Firefighter", "picture": "img/victims/ladders/ladder13/thomas_e_sabella.jpg"},
+            {"name": "Gregory Stajk", "age": 46, "rank": "Firefighter", "picture": "img/victims/ladders/ladder13/gregory_stajk.jpg"}
+          ]},
+          {"name": "Engine 22", "site":"South tower","victims": [
+            {"name": "Thomas Anthony Casoria", "age": 29, "rank": "Firefighter", "picture": "img/victims/engines/engine22/thomas_anthony_casoria.jpg"},
+            {"name": "Michael J. Elferis", "age": 27, "rank": "Firefighter", "picture": "img/victims/engines/engine22/michael_j_elferis.jpg"},
+            {"name": "Vincent D. Kane", "age": 37, "rank": "Firefighter", "picture": "img/victims/engines/engine22/vincent_d_kane.jpg"},
+            {"name": "Martin E. McWilliams", "age": 35, "rank": "Firefighter", "picture": "img/victims/engines/engine22/martin_e_mcwilliams.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "253 Lafayette Street Manhattan",
+      "geolocation": [40.72334, -73.99669],
+      "totalvictims": 9,
+        "teams": [
+      {"name": "Ladder 20", "site":"North tower", "victims": [
+            {"name": "John R. Fischer", "age": 46, "rank": "Captain", "picture": "img/victims/ladders/ladder20/john_r_fischer.jpg"},
+            {"name": "John Patrick Burnside", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder20/john_patrick_burnside.jpg"},
+            {"name": "James Michael Gray", "age": 34, "rank": "Firefighter", "picture": "img/victims/ladders/ladder20/james_michael_gray.jpg"},
+            {"name": "Sean S. Hanley", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder20/sean_s_hanley.jpg"},
+            {"name": "David Laforge", "age": 50, "rank": "Firefighter", "picture": "img/victims/ladders/ladder20/david_laforge.jpg"},
+            {"name": "Robert Thomas Linnane", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder20/robert_thomas_linnane.jpg"},
+            {"name": "Robert D. McMahon", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder20/robert_d_mcmahon.jpg"}
+          ]},
+          {"name": "Division 1", "site":"North tower","victims": [
+            {"name": "Joseph D. Farrelly", "age": 47, "rank": "Captain", "picture": "img/victims/divisions/division1/joseph_d_farrelly.jpg"},
+            {"name": "Thomas Moody", "age": 45, "rank": "Captain", "picture": "img/victims/divisions/division1/thomas_moody.jpg"}
+          ]}
+        ]
+    },
+    {
+      "address": "157-59 East 67th Street Manhattan",
+      "geolocation": [40.76809, -73.96654],
+      "totalvictims": 2,
+        "teams": [
+          {"name": "Ladder 16", "site":"South tower", "victims": [
+            {"name": "Raymond E. Murphy", "age": 46, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder16/raymond_e_murphy.jpg"},
+            {"name": "Robert Curatolo", "age": 31, "rank": "Firefighter", "picture": "img/victims/ladders/ladder16/robert_curatolo.jpg"}
+          ]},
+        ]
+    },  
+   {
+      "address": "440 West 38th Street Manhattan",
+      "geolocation": [40.75653, -73.99651],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Ladder 21", "site":"South tower", "victims": [
+            {"name": "Gerald T. Atwood", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder21/gerald_t_atwood.jpg"},
+            {"name": "Gerard Duffy", "age": 53, "rank": "Firefighter", "picture": "img/victims/ladders/ladder21/gerard_duffy.jpg"},
+            {"name": "Keith Glascoe", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder21/keith_glascoe.jpg"},
+            {"name": "Joseph Henry", "age": 25, "rank": "Firefighter", "picture": "img/victims/ladders/ladder21/joseph_henry.jpg"},
+            {"name": "William E. Krukowski", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder21/william_e_krukowski.jpg"},
+            {"name": "Benjamin Suarez", "age": 34, "rank": "Firefighter", "picture": "img/victims/ladders/ladder21/benjamin_suarez.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "142-46 West 31st Street Manhattan",
+      "geolocation": [40.74748, -73.98824],
+      "totalvictims": 4,
+        "teams": [
+          {"name": "Ladder 24", "site":"South tower", "victims": [
+            {"name": "Daniel J. Brethel", "age": 43, "rank": "Captain", "picture": "img/victims/ladders/ladder24/daniel_j_brethel.jpg"},
+            {"name": "Stephen Elliot Belson", "age": 51, "rank": "Firefighter", "picture": "img/victims/ladders/ladder24/stephen_elliot_belson.jpg"}
+          ]},
+          {"name": "Engine 1", "site":"North tower","victims": [
+            {"name": "Andrew Desperito", "age": 43, "rank": "Lieutenant", "picture": "img/victims/engines/engine1/andrew_desperito.jpg"},
+            {"name": "Michael T. Weinberg", "age": 34, "rank": "Firefighter", "picture": "img/victims/engines/engine1/michael_t_weinberg.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "205-207 West 77th Street Manhattan",
+      "geolocation": [40.78212, -73.97992],
+      "totalvictims": 7,
+        "teams": [
+          {"name": "Ladder 25", "site":"South tower", "victims": [
+            {"name": "Glenn C. Perry", "age": 41, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder25/glenn_c_perry.jpg"},
+            {"name": "Matthew Barnes", "age": 37, "rank": "Firefighter", "picture": "img/victims/ladders/ladder25/matthew_barnes.jpg"},
+            {"name": "John Michael Collins", "age": 42, "rank": "Firefighter", "picture": "img/victims/ladders/ladder25/john_michael_collins.jpg"},
+            {"name": "Kenneth Kumpel", "age": 42, "rank": "Firefighter", "picture": "img/victims/ladders/ladder25/kenneth_kumpel.jpg"},
+            {"name": "Robert Minara", "age": 54, "rank": "Firefighter", "picture": "img/victims/ladders/ladder25/robert_minara.jpg"},
+            {"name": "Joseph Rivelli", "age": 43, "rank": "Firefighter", "picture": "img/victims/ladders/ladder25/joseph_rivelli.jpg"},
+            {"name": "Paul G. Ruback", "age": 50, "rank": "Firefighter", "picture": "img/victims/ladders/ladder25/paul_g_ruback.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "460 Cross Bronx Expressway Bronx",
+      "geolocation": [40.84393, -73.89734],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Ladder 27", "site":"South tower", "victims": [
+            {"name": "John Marshall", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder27/john_marshall.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "2225 Belmont Avenue Bronx",
+      "geolocation": [40.85191, -73.88776],
+      "totalvictims": 1,
+        "teams": [
+        {"name": "Ladder 38", "site":"South tower", "victims": [
+        {"name": "Joseph Spor Jr", "age": 35, "rank": "Firefighter", "picture": "img/victims/ladders/ladder38/joseph_spor_jr.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "655 Prospect Avenue Bronx",
+      "geolocation": [40.81497, -73.90351],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Ladder 42", "site":"North tower", "victims": [
+            {"name": "Peter Alexander Bielfeld", "age": 44, "rank": "Firefighter", "picture": "img/victims/ladders/ladder42/peter_alexander_bielfeld.jpg"}
+          ]}
+        ]
+    },
+   {
+      "address": "31 Richards Street Brooklyn",
+      "geolocation": [40.68043, -74.00655],
+      "totalvictims": 7,
+        "teams": [
+          {"name": "Ladder 101", "site":"North tower", "victims": [
+            {"name": "Joseph Gullickson", "age": 37, "rank": "Lieutenant", "picture": "img/victims/ladders/ladder101/joseph_gullickson.jpg"},
+            {"name": "Patrick Byrne", "age": 39, "rank": "Firefighter", "picture": "img/victims/ladders/ladder101/patrick_byrne.jpg"},
+            {"name": "Salvatore B. Calabro", "age": 38, "rank": "Firefighter", "picture": "img/victims/ladders/ladder101/salvatore_b_calabro.jpg"},
+            {"name": "Brian Cannizzaro", "age": 30, "rank": "Firefighter", "picture": "img/victims/ladders/ladder101/brian_cannizzaro.jpg"},
+            {"name": "Thomas J. Kennedy", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder101/thomas_j_kennedy.jpg"},
+            {"name": "Joseph Maffeo", "age": 31, "rank": "Firefighter", "picture": "img/victims/ladders/ladder101/joseph_maffeo.jpg"},
+            {"name": "Terence A. McShane", "age": 37, "rank": "Firefighter", "picture": "img/victims/ladders/ladder101/terence_a_mcshane.jpg"}
+          ]}
+        ]
+    }, 
+  {
+      "address": "494 Dean Street Brooklyn",
+      "geolocation": [40.68135, -73.97359],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Ladder 105", "site":"South tower", "victims": [
+            {"name": "Vincent Brunton", "age": 43, "rank": "Captain", "picture": "img/victims/ladders/ladder105/vincent_brunton.jpg"},
+            {"name": "Thomas Richard Kelly", "age": 39, "rank": "Firefighter", "picture": "img/victims/ladders/ladder105/thomas_richard_kelly.jpg"},
+            {"name": "Henry Alfred Miller Jr", "age": 51, "rank": "Firefighter", "picture": "img/victims/ladders/ladder105/henry_alfred_miller_jr.jpg"},
+            {"name": "Dennis O'Berg", "age": 28, "rank": "Firefighter", "picture": "img/victims/ladders/ladder105/dennis_oberg.jpg"},
+            {"name": "Frank Anthony Palombo", "age": 46, "rank": "Firefighter", "picture": "img/victims/ladders/ladder105/frank_anthony_palombo.jpg"}
+          ]},
+          {"name": "Engine 219", "site":"South tower", "victims": [
+            {"name": "John Chipura", "age": 39, "rank": "Firefighter", "picture": "img/victims/engines/engine219/john_chipura.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "489-91 Saint John's Place Brooklyn",
+      "geolocation": [40.67730, -73.97625],
+      "totalvictims": 5,
+        "teams": [
+          {"name": "Ladder 132", "site":"South tower", "victims": [
+            {"name": "Andrew Jordan", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder132/andrew_jordan.jpg"},
+            {"name": "Michael Kiefer", "age": 25, "rank": "Firefighter", "picture": "img/victims/ladders/ladder132/michael_kiefer.jpg"},
+            {"name": "Thomas Mingione", "age": 34, "rank": "Firefighter", "picture": "img/victims/ladders/ladder132/thomas_mingione.jpg"},
+            {"name": "John T. Vigiano II", "age": 36, "rank": "Firefighter", "picture": "img/victims/ladders/ladder132/john_t_vigiano_II.jpg"},
+            {"name": "Sergio Villanueva", "age": 33, "rank": "Firefighter", "picture": "img/victims/ladders/ladder132/sergio_villanueva.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "86-53 Grand Avenue Queens",
+      "geolocation": [40.73642, -73.87885],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Ladder 136", "site":"South tower", "victims": [
+            {"name": "Michael Joseph Cawley", "age": 32, "rank": "Firefighter", "picture": "img/victims/ladders/ladder136/michael_joseph_cawley.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "2510-14 Neptune Avenue Brooklyn",
+      "geolocation": [40.57777, -73.99297],
+      "totalvictims": 1,
+        "teams": [
+          {"name": "Ladder 166", "site":"North tower", "victims": [
+            {"name": "William X. Wren", "age": 61, "rank": "Firefighter", "picture": "img/victims/ladders/ladder166/william_x_wren.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "530 West 43rd Street Manhattan",
+      "geolocation": [40.76072, -73.99658],
+      "totalvictims": 11,
+        "teams": [
+          {"name": "Rescue 1", "site":"North tower", "victims": [
+            {"name": "Terence S. Hatton", "age": 41, "rank": "Captain", "picture": "img/victims/rescues/rescue1/terence_s_hatton.jpg"},
+            {"name": "Dennis Mojica", "age": 50, "rank": "Lieutenant", "picture": "img/victims/rescues/rescue1/dennis_mojica.jpg"},
+            {"name": "Joseph Angelini Sr", "age": 63, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/joseph_angelini_sr.jpg"},
+            {"name": "Gary Geidel", "age": 44, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/gary_geidel.jpg"},
+            {"name": "William Henry", "age": 49, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/william_henry.jpg"},
+            {"name": "Kenneth Joseph Marino", "age": 40, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/kenneth_joseph_marino.jpg"},
+            {"name": "Michael Montesi", "age": 39, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/michael_montesi.jpg"},
+            {"name": "Gerard Terence Nevins", "age": 46, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/gerard_terence_nevins.jpg"},
+            {"name": "Patrick J. O'Keefe", "age": 44, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/patrick_j_okeefe.jpg"},
+            {"name": "Brian Edward Sweeney", "age": 29, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/brian_edward_sweeney.jpg"},
+            {"name": "David M. Weiss", "age": 41, "rank": "Firefighter", "picture": "img/victims/rescues/rescue1/david_m_weiss.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "1472 Bergen Street Brooklyn",
+      "geolocation": [40.67500, -73.93507],
+      "totalvictims": 7,
+        "teams": [
+          {"name": "Rescue 2", "site":"North tower", "victims": [
+            {"name": "Peter C. Martin", "age": 43, "rank": "Lieutenant", "picture": "img/victims/rescues/rescue2/peter_c_martin.jpg"},
+            {"name": "William David Lake", "age": 44, "rank": "Firefighter", "picture": "img/victims/rescues/rescue2/william_david_lake.jpg"},
+            {"name": "Daniel F. Libretti", "age": 43, "rank": "Firefighter", "picture": "img/victims/rescues/rescue2/daniel_f_liberetti.jpg"},
+            {"name": "John Napolitano", "age": 32, "rank": "Firefighter", "picture": "img/victims/rescues/rescue2/john_napolitano.jpg"},
+            {"name": "Kevin O'Rourke", "age": 44, "rank": "Firefighter", "picture": "img/victims/rescues/rescue2/kevin_orourke.jpg"},
+            {"name": "Lincoln Quappe", "age": 38, "rank": "Firefighter", "picture": "img/victims/rescues/rescue2/lincoln_quappe.jpg"},
+            {"name": "Edward Rall", "age": 44, "rank": "Firefighter", "picture": "img/victims/rescues/rescue2/edward_rall.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "1655 Washington Avenue Bronx",
+      "geolocation": [40.84118, -73.90138],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Rescue 3", "site":"South tower", "victims": [
+            {"name": "Christopher Joseph Blackwell", "age": 42, "rank": "Firefighter", "picture": "img/victims/rescues/rescue3/christopher_joseph_blackwell.jpg"},
+            {"name": "Thomas Foley", "age": 32, "rank": "Firefighter", "picture": "img/victims/rescues/rescue3/thomas_foley.jpg"},
+            {"name": "Thomas Gambino Jr", "age": 48, "rank": "Firefighter", "picture": "img/victims/rescues/rescue3/thomas_gambino_jr.jpg"},
+            {"name": "Raymond Meisenheimer", "age": 46, "rank": "Firefighter", "picture": "img/victims/rescues/rescue3/raymond_meisenheimer.jpg"},
+            {"name": "Donald J. Regan", "age": 47, "rank": "Firefighter", "picture": "img/victims/rescues/rescue3/donald_j_regan.jpg"},
+            {"name": "Gerard Patrick Schrang", "age": 45, "rank": "Firefighter", "picture": "img/victims/rescues/rescue3/gerard_patrick_schrang.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "64-18 Queens Boulevard Queens",
+      "geolocation": [40.74067, -73.90099],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Rescue 4", "site":"South tower", "victims": [
+            {"name": "Brian Hickey", "age": 47, "rank": "Captain", "picture": "img/victims/rescues/rescue4/brian_hickey.jpg"},
+            {"name": "Kevin Dowdell", "age": 46, "rank": "Lieutenant", "picture": "img/victims/rescues/rescue4/kevin_dowdell.jpg"},
+            {"name": "Terrence Patrick Farrell", "age": 45, "rank": "Firefighter", "picture": "img/victims/rescues/rescue4/terrence_patrick_farrell.jpg"},
+            {"name": "William J. Mahoney", "age": 37, "rank": "Firefighter", "picture": "img/victims/rescues/rescue4/william_j_mahoney.jpg"},
+            {"name": "Peter Allen Nelson", "age": 42, "rank": "Firefighter", "picture": "img/victims/rescues/rescue4/peter_allen_nelson.jpg"},
+            {"name": "Durrell V. Pearsall", "age": 34, "rank": "Firefighter", "picture": "img/victims/rescues/rescue4/durrell_v_pearsall.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "1850 Clove Road Staten Island",
+      "geolocation": [40.60730, -74.08922],
+      "totalvictims": 10,
+        "teams": [
+          {"name": "Rescue 5", "site":"North tower", "victims": [
+            {"name": "Louis Joseph Modafferi", "age": 45, "rank": "Captain", "picture": "img/victims/rescues/rescue5/louis_joseph_modafferi.jpg"},
+            {"name": "Harvey Harrell", "age": 49, "rank": "Lieutenant", "picture": "img/victims/rescues/rescue5/harvey_harrell.jpg"},
+            {"name": "John P. Bergin", "age": 39, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/john_p_bergin.jpg"},
+            {"name": "Carl Vincent Bini", "age": 44, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/carl_vincent_bini.jpg"},
+            {"name": "Michael Curtis Fiore", "age": 46, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/michael_curtis_fiore.jpg"},
+            {"name": "Andre G. Fletcher", "age": 37, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/andre_g_fletcher.jpg"},
+            {"name": "Douglas Charles Miller", "age": 34, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/douglas_charles_miller.jpg"},
+            {"name": "Jeffrey Matthew Palazzo", "age": 33, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/jeffrey_matthew_palazzo.jpg"},
+            {"name": "Nicholas P. Rossomando", "age": 35, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/nicholas_p_rossomando.jpg"},
+            {"name": "Allan Tarasiewicz", "age": 45, "rank": "Firefighter", "picture": "img/victims/rescues/rescue5/allan_tarasiewicz.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "750 Main St. Roosevelt Island",
+      "geolocation": [40.76674, -73.94528],
+      "totalvictims": 4,
+        "teams": [
+      {"name": "Special Operations", "site":"North tower", "victims": [
+            {"name": "Raymond Mathew Downey", "age": 63, "rank": "Chief", "picture": "img/victims/special_operations/raymond_matthew_downey.jpg"},
+            {"name": "Patrick J. Waters", "age": 44, "rank": "Captain", "picture": "img/victims/special_operations/patrick_j_waters.jpg"},
+            {"name": "Timothy Higgins", "age": 43, "rank": "Lieutenant", "picture": "img/victims/special_operations/timothy_higgins.jpg"},
+            {"name": "Michael Thomas Russo Sr", "age": 44, "rank": "Lieutenant", "picture": "img/victims/special_operations/michael_thomas_russo.jpg"}
+          ]}
+    ]
+  },
+  {
+      "address": "788 Union Street Brooklyn",
+      "geolocation": [40.67466, -73.97666],
+      "totalvictims": 12,
+        "teams": [
+      {"name": "Squad 1", "site":"South tower", "victims": [
+            {"name": "James M. Amato", "age": 43, "rank": "Captain", "picture": "img/victims/squads/squad1/james_m_amato.jpg"},
+            {"name": "Edward A. D'Atri", "age": 38, "rank": "Lieutenant", "picture": "img/victims/squads/squad1/edward_a_datri.jpg"},
+            {"name": "Michael Esposito", "age": 41, "rank": "Lieutenant", "picture": "img/victims/squads/squad1/michael_esposito.jpg"},
+            {"name": "Michael N. Fodor", "age": 53, "rank": "Lieutenant", "picture": "img/victims/squads/squad1/michael_n_fodor.jpg"},
+            {"name": "Brian Bilcher", "age": 37, "rank": "Firefighter", "picture": "img/victims/squads/squad1/brian_bilcher.jpg"},
+            {"name": "Gary Box", "age": 37, "rank": "Firefighter", "picture": "img/victims/squads/squad1/gary_box.jpg"},
+            {"name": "Thomas M. Butler", "age": 37, "rank": "Firefighter", "picture": "img/victims/squads/squad1/thomas_butler.jpg"},
+            {"name": "Peter Carroll", "age": 42, "rank": "Firefighter", "picture": "img/victims/squads/squad1/peter_carroll.jpg"},
+            {"name": "Robert Cordice", "age": 28, "rank": "Firefighter", "picture": "img/victims/squads/squad1/robert_cordice.jpg"},
+            {"name": "David J. Fontana", "age": 37, "rank": "Firefighter", "picture": "img/victims/squads/squad1/david_j_fontana.jpg"},
+            {"name": "Matthew David Garvey", "age": 37, "rank": "Firefighter", "picture": "img/victims/squads/squad1/matthew_david_garvey.jpg"},
+            {"name": "Stephen Gerard Siller", "age": 34, "rank": "Firefighter", "picture": "img/victims/squads/squad1/stephen_gerard_siller.jpg"}
+          ]}
+    ]
+  },
+  {
+      "address": "132 West 10th Street Manhattan",
+      "geolocation": [40.73443, -74.00036],
+      "totalvictims": 7,
+        "teams": [
+          {"name": "Squad 18", "site":"North tower", "victims": [
+            {"name": "William E. McGinn", "age": 43, "rank": "Lieutenant", "picture": "img/victims/squads/squad18/william_e_mcginn.jpg"},
+            {"name": "Eric Allen", "age": 44, "rank": "Firefighter", "picture": "img/victims/squads/squad18/eric_allen.jpg"},
+            {"name": "Andrew Fredricks", "age": 40, "rank": "Firefighter", "picture": "img/victims/squads/squad18/andrew_fredricks.jpg"},
+            {"name": "David Halderman", "age": 40, "rank": "Firefighter", "picture": "img/victims/squads/squad18/david_halderman.jpg"},
+            {"name": "Timothy Haskell", "age": 34, "rank": "Firefighter", "picture": "img/victims/squads/squad18/timothy_haskell.jpg"},
+            {"name": "Manuel Mojica", "age": 37, "rank": "Firefighter", "picture": "img/victims/squads/squad18/manuel_mojica.jpg"},
+            {"name": "Lawrence Virgilio", "age": 38, "rank": "Firefighter", "picture": "img/victims/squads/squad18/lawrence_virgilio.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "330 East 150th Street Bronx",
+      "geolocation": [40.81724, -73.92012],
+      "totalvictims": 6,
+        "teams": [
+          {"name": "Squad 41", "site":"North tower", "victims": [
+            {"name": "Michael K. Healey", "age": 42, "rank": "Lieutenant", "picture": "img/victims/squads/squad41/michael_k_healey.jpg"},
+            {"name": "Thomas Patrick Cullen III", "age": 31, "rank": "Firefighter", "picture": "img/victims/squads/squad41/thomas_patrick_cullen_III.jpg"},
+            {"name": "Robert Hamilton", "age": 43, "rank": "Firefighter", "picture": "img/victims/squads/squad41/robert_hamilton.jpg"},
+            {"name": "Michael J. Lyons", "age": 32, "rank": "Firefighter", "picture": "img/victims/squads/squad41/michael_j_lyons.jpg"},
+            {"name": "Gregory Sikorsky", "age": 34, "rank": "Firefighter", "picture": "img/victims/squads/squad41/gregory_sikorsky.jpg"},
+            {"name": "Richard Bruce Van Hine", "age": 48, "rank": "Firefighter", "picture": "img/victims/squads/squad41/richard_bruce_vanhine.jpg"}
+          ]}
+        ]
+    },
+  {
+      "address": "617 Central Avenue Brooklyn",
+      "geolocation": [40.68867, -73.90817],
+      "totalvictims": 5,
+        "teams": [
+          {"name": "Squad 252", "site":"North tower", "victims": [
+            {"name": "Tarel Coleman", "age": 32, "rank": "Firefighter", "picture": "img/victims/squads/squad252/tarel_coleman.jpg"},
+            {"name": "Thomas Kuveikis", "age": 48, "rank": "Firefighter", "picture": "img/victims/squads/squad252/thomas_kuveikis.jpg"},
+            {"name": "Peter J. Langone", "age": 41, "rank": "Firefighter", "picture": "img/victims/squads/squad252/peter_j_langone.jpg"},
+            {"name": "Patrick Lyons", "age": 34, "rank": "Firefighter", "picture": "img/victims/squads/squad252/patrick_lyons.jpg"},
+            {"name": "Kevin Prior", "age": 28, "rank": "Firefighter", "picture": "img/victims/squads/squad252/kevin_prior.jpg"}
+          ]}
+        ]
+    }]
+}]
+    

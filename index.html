@@ -1,0 +1,231 @@
+<html>
+
+<head>
+
+<title>9/11 Data visualisation</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.vegas.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />
+<link rel="stylesheet" href="css/leaflet.css" />
+<link rel="stylesheet" href="css/pageguide.min.css" />
+<link rel="stylesheet" href="css/L.Control.Zoomslider.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <link rel="stylesheet" href="css/L.Control.Zoomslider.ie.css" />
+<![endif]-->
+
+<script src="js/attackData.json" type="text/javascript"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script src="js/L.Control.Zoomslider.js" ></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry" type="text/javascript" ></script>
+<script src="js/site.js"></script>
+<script id="vegasscript" src="js/jquery.vegas.min.js"></script>
+<script src="js/pageguide.min.js"></script>
+<script src="js/elementTransitions.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/map.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/unveil.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<ul id="tlyPageGuide" data-tourtitle="Click here for a site tour through this website.">
+      <li class="tlypageguide_left" data-tourtarget=".first_element_to_target">
+        <div>
+          It is very important that you have turned on the volume of your computer. You can see that the North and South Tower of the WTC already has been plotted on the map. Each company that was sent to the WTC will appear at the time when the attacks take place. Only the companies that lost a member will be plotted. Check the information button at the left side on this page for an explanation of the icons. Click on the icons on the map for more information. In the pop-up of those icons, you will see a ‘stats’ icon where you will find more information about the selected company.
+        </div>
+      </li>
+      <li class="tlypageguide_right" data-tourtarget=".second_element_to_target">
+        <div>
+          This is the timeline of 9/11, which contains the most important events of that day. There are three categories: 'small' events (small grey circle), 'big' events (big grey circle) and stories from those who are left behind (small red circles). These stories will give you a more personal perspective about the impact that 9/11 had made. You can navigate through the timeline using the back and forward button. It is also possible to click on every event.
+        </div>
+      </li>
+      <li class="tlypageguide_left" data-tourtarget=".third_element_to_target">
+        <div>
+          Here you will find the number of FDNY casualties for the North and South Tower. These numbers will only appear when the towers are collapsed in the timeline below. At that time they also will be clickable. Once you have clicked on a tower, you will get a list with all the FDNY casualties per team who have made the ultimate sacrifice.
+        </div>
+      </li>
+    </ul>
+<div id="intro">
+	<div id="titel" class="intro">September 11 2001</div>
+	<div id="intro1" class="intro">At 8:46 flight 11 crashes into the north Tower 
+	<span id="bold">1,355</span> people died</div>
+	<div id="intro2" class="intro">At 9:03 flight 175 crashes into the South Tower <span id="bold">600</span> people died. </div>
+	<div id="intro3" class="intro"><span id="bold">343 firefighters</span> were killed in action. They entered the towers to rescue the people who were trapped inside, not knowing these towers would collapse.</div>
+	<div id="intro4" class="intro">This site is a <span id="bold">tribute</span> to all the firefighters who has fallen during 9/11. <br>On this site, you can check the events that happened that day and search for information about companies who were sent to the world trade center and lost some of their team members.</div>
+	<span id="skip"></span>
+</div>
+<div id="pt-main" class="et-wrapper" >
+	<a href="javascript:void(0);" onclick="javascript:introJs().setOption('showBullets', false).start();"><div id="sitetour"></div></a>
+	<div id="infobutton"></div>
+	<div id="legenda">
+		<div id="closeLegenda"><div id="closeK" onclick='closeLegenda()'></div></div>
+		<table>
+			<tr><td><img src="img/northtower-icon-m.png"></td><td>North Tower</td></tr>
+			<tr><td><img src="img/southtower-icon-m.png"></td><td>South Tower</td></tr>
+			<tr><td><img src="img/orange-icon-m.png"></td><td>Company with 2 or less casualties</td></tr>
+			<tr><td><img src="img/red-icon-m.png"></td><td> Company with more than 2 casualties</td></tr>
+			<tr><td><img id="bevent" src="img/event.png"></td><td> A 'big' event</td></tr>
+			<tr><td><img id="flashback" src="img/eventK.png"></td><td> A 'small' event</td></tr>
+			<tr><td><img id="flashback" src="img/flashback.png"></td><td> Story from those who were left behind</td></tr>
+			<tr><td><img src="img/stats.png" ></td><td>Click for statistics</td></tr>
+		</table>
+	</div>
+	<div class="et-page">
+		<div id="wrapperdashboard" class="data-block first_element_to_target" >
+			<div id="dashboard" >
+				<div id="closeDashboardWrapper"><div id="close" onclick='closeDashboard()'></div></div>
+				<div id="streetview"></div>
+				<div id="towers"></div>
+				<div id="casualties"></div>
+			</div>
+		</div>
+		<div id="map" class="block leaflet-container leaflet-fade-anim" ></div>
+		<div id="timeline">
+			<div id="timelinewrapper" class="data-block second_element_to_target" >
+				<div id="backwardbtn" class="timelineBackwardBtn"></div>
+				<div id="timelinepopup">
+					<img id='icon-close-small' onclick='closePopup()' src='img/closeK.png'>
+					<div id="eventContent"></div>
+					<div id="eventTitle"></div>
+					<div id='eventArrow'></div>
+				</div>
+				<div id="forwardbtn" class="timelineForwardBtn"></div>
+				<ul>
+					<li id="flashback1" title="Story - Everyone helped" alt="Story - Everyone helped" class="flashback eventClick"></li>
+					<li id="event1" title="Flight 11 departs" alt="Flight 11 departs" class="eventsK eventClick"><p>7:59</p></li>
+					<li id="event2" title="Flight 175 departs. Flight 11 hijacked" alt="Flight 175 departs. Flight 11 hijacked" class="eventsK eventClick"><p>8:14</p></li>
+					<li id="event3" title="Betty calls about the hijacking" alt="Betty calls about the hijacking" class="eventsK eventClick"><p>8:19</p></li>
+					<li id="flashback2" title="Story - Only memories" alt="Story - Only memories" class="flashback eventClick"></li>
+					<li id="bigEvent1" title="Flight 11 crashes into the North Tower" alt="Flight 11 crashes into the North Tower" class="events eventClick"><p>8:46</p></li>
+					<li id="flashback3" title="Story - Digg for hope" alt="Story - Digg for hope" class="flashback eventClick"></li>
+					<li id="event4" title="Evacuation North Tower." alt="Evacuation North Tower." class="eventsK eventClick"><p>09:02</p></li>
+					<li id="bigEvent2" title="Flight 175 crashes into South Tower." alt="Flight 175 crashes into South Tower." class="events eventClick"><p>09:03</p></li>
+					<li id="event5" title="All bridges to Manhatten are closed." alt="All bridges to Manhatten are closed." class="eventsK eventClick"><p>9:21</p></li>
+					<li id="event6" title="Press conference President Bush." alt="Press conference President Bush." class="eventsK eventClick"><p>9:29</p></li>
+					<li id="flashback4" title="Story - Something is everything" alt="Story - Something is everything" class="flashback eventClick"></li>
+					<li id="event7" title="Shutdown U.S. airspace." alt="Shutdown U.S. airspace." class="eventsK eventClick"><p>9:45</p></li>
+					<li id="bigEvent3" title="South Tower collapses." alt="South Tower collapses." class="events eventClick"><p>9:58</p></li>
+					<li id="event8" title="Evacuation North Tower." alt="Evacuation North Tower." class="eventsK eventClick"><p>10:00</p></li>
+					<li id="flashback5" title="Story - Desperate phonecalls" alt="Story - Desperate phonecalls" class="flashback eventClick"></li>
+					<li id="bigEvent4" title="North Tower collapses." alt="North Tower collapses." class="events eventClick"><p>10:28</p></li>
+					<li id="event9" title="Regroup firefighters" alt="Regroup firefighters" class="eventsK eventClick"><p>10:30</p></li>
+					<li id="flashback6" title="Story - A fireman will never let anyone behind" alt="Story - A fireman will never let anyone behind" class="flashback eventClick"></li>
+				</ul>
+				<hr noshade size=3 width="100%" color="#3b3b3b">
+				<img id="timelineSlider" src="img/timeArrow.png">
+			</div>
+		</div>
+		<div id="wrapperTowers" class="data-block third_element_to_target">
+			<div id="wrapper-icon-northtower" class="icon" et-out="scaleDown" et-in="moveFromRight ontop">
+				<span class="nrCasualties">Number of FDNY casualties</span><br>
+				<span id="northCount" class="Count">0</span><br>
+				<span class="titleCasualties">North Tower</span>
+			</div>
+			<div id="wrapper-icon-southtower" class="icon" et-out="scaleDown" et-in="moveFromRight ontop">
+				<span class="nrCasualties">Number of FDNY casualties</span><br>
+				<span id="southCount" class="Count">0</span><br>
+				<span class="titleCasualties">South Tower</span>
+			</div>
+		</div>
+		<div id="about" onclick="showAbout()">About</div>
+	</div>
+	<div id="page-victims" class="et-page">
+		<div id="wrapper-icon-map" class="icon et-rotate" et-out="scaleDown" et-in="moveFromLeft ontop" onclick="clearVictimlist();">
+			<svg id="icon-map" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="120px" height="120px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+			<g>
+				<path d="M75.195,126.748c-32.714,0-59.328-26.614-59.328-59.328c0-32.714,26.614-59.328,59.328-59.328
+					c32.712,0,59.326,26.614,59.326,59.328C134.521,100.134,107.907,126.748,75.195,126.748z M75.195,14.092
+					c-29.405,0-53.328,23.923-53.328,53.328c0,29.405,23.923,53.328,53.328,53.328c29.404,0,53.326-23.923,53.326-53.328
+					C128.521,38.015,104.6,14.092,75.195,14.092z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 63.2695 145.667)" font-family="'BebasNeue'" font-size="18">Map</text>
+			<polygon points="29.215,77.998 54.223,90.459 74.932,78.612 96.079,90.459 121.174,77.998 109.417,43.338 90.771,54.941 
+				75.194,44.303 59.312,54.482 41.411,43.338 "/>
+			</svg>
+		</div>
+		<div id="wrapper-victims">
+			<ul id="filters">
+				<li><a href="#" class="filter" id="filterAll">View all</a></li>
+			    <li><a href="#" class="filter" id="filterBattalion">Battalion</a></li>
+			    <li><a href="#" class="filter" id="filterEngine">Engine</a></li>
+			    <li><a href="#" class="filter" id="filterDivision">Division</a></li>
+			    <li><a href="#" class="filter" id="filterLadder">Ladder</a></li>
+			    <li><a href="#" class="filter" id="filterSquad">Squad</a></li>
+			    <li><a href="#" class="filter" id="filterRescue" >Rescue</a></li>
+			    <li><a href="#" class="filter" id="filterHazmat">Haz-mat</a></li>
+			    <li><a href="#" class="filter" id="filterSpecialOperations">Special operation</a></li>
+			</ul>
+			<ul id="grid">
+				
+			</ul>
+
+			<div class="victiminfo">
+				<div id="closeVictimWrapper"><div id="closeK" onclick='closeVictiminfo()'></div></div>
+				<div id="personaldata">
+					<div id="victimphoto"></div>
+					<div id="victimdata"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+<div id="aboutWrapper">
+	<div id='aboutText'>
+		<span id='aboutHead'>The 9/11 Heroes</span>
+		<p>This site is a tribute to the 9/11 Fire Fighters who have made the ultimate sacrifice for their country. With this interactive 
+		visualization you can see what happened on 9/11 and how the Fire Fighters were involved during the evacuation. It is also possible 
+		to view the list of casualties. Viewer discretion is advised.</p>
+		<p><span id='aboutHead2'>Developers</span><br>
+		Thomas van de Ven and Arjan Marisa&euml;l<br>
+		Students at Avans Hogeschool, 's-Hertogenbosch, The Netherlands</p>
+		<p><span id='aboutHead2'>Sources</span><br>
+		<a href="https://nycopendata.socrata.com/Public-Safety/Map-of-NYC-Fire-Houses/pg99-2ihy?" target="_blank">NYC Open Data: Map of NYC Fire Houses</a><br>
+		<a href="http://en.wikipedia.org/wiki/Timeline_for_the_day_of_the_September_11_attacks" target="_blank">Wikipedia: Timeline events of the day</a><br>
+		<a href="http://www.globalresearch.ca/9-11-timeline-stand-down-minute-by-minute-chronology-from-7-59-a-m-till-10-06-05-a-m/32325" target="_blank">Global Research: Timeline events of the day</a><br>
+		<a href="http://www.nyc.gov/html/fdny/html/memorial/index.shtml" target="_blank">New York City Fire Department: Memorial pages casualties</a><br>
+		<a href="http://www.youtube.com/watch?v=pNCF6TmYpyU" target="_blank">Youtube: Brothers on Holy Ground 9-11 Documentary</a><br>
+		<a href="http://www.youtube.com/watch?v=VrTQqfuKcIs" target="_blank">Youtube: The 9/11 Fire Fighters (Documentary)</a><br>
+		<a href="http://www.youtube.com/watch?v=VLwrQcO9w80" target="_blank">Youtube: 9/11 Audiotape of firefighters last moments</a><br>
+		<a href="http://www.youtube.com/watch?v=icfkIH3j-nk" target="_blank">Youtube: Betty Ong's 9/11 call from Flight 11</a><br>
+		<a href="http://www.youtube.com/watch?v=F-qHSeMKjZU" target="_blank">Youtube: Bush's First Public Statement on 9/11/2001 at Booker Elementary School</a><br>
+		<a href="http://www.youtube.com/watch?v=nq7rdhZfyJc" target="_blank">Youtube: First Response - Ground Zero America</a><br>
+		<a href="http://www.youtube.com/watch?v=RqLQLBWaDRE" target="_blank">Youtube: 9/11 Audio Tapes</a><br>
+		<a href="http://nhfaithfusion.com/2013/09/a-prayer-of-remembrance-for-fallen-heroes/" target="_blank">Faith Fusion: Foto</a><br>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/f/f0/NYFD_Deputy_Chief_Joseph_Curry_at_the_WTC_on_2001-09-14.jpg" target="_blank">Wikipedia: Foto</a><br>
+		<a href="http://shineyourlight-shineyourlight.blogspot.nl/2011/09/911-911-ten-years-later.html" target="_blank">Shineyourlight: Foto's</a></p>
+	</div>
+	<div id='towerpopup'>
+		<span id='aboutHead'>No casualties viewable</span>
+		<p>At this moment there are no casualties viewable. The reason why, is because the attack on this tower did not happened yet in the timeline. Once you've skipped to the event, or to an event after the attack, the casualties will be viewable.</p>
+	</div>
+</div>
+</body>
+<script>
+$(document).ready(function() {
+  $("img").unveil();
+});
+$("#skip").click(function() {
+	$("#pt-main").fadeIn(3000);
+	$.vegas('destroy');
+	removeScript();
+	$("audio").remove();
+    $("#intro").remove();
+	addMap();
+	bg +=1;
+	addBgsound();
+	firstPopup();
+	var pageguide = tl.pg.init();
+	$('#tlyPageGuide').css("display","block");
+});
+</script>
+</html>
